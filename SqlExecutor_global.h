@@ -4,9 +4,9 @@
 #include <QtCore/qglobal.h>
 #include <QString>
 #include <QObject>
-#include <QSettings>
 #include <QThread>
 #include <QScopedPointer>
+#include <QVariant>
 
 
 #define NO_COPY(Class)\
@@ -30,7 +30,7 @@
         return &object;\
     }\
     private:\
-    Class()
+    Class();
 
 
 

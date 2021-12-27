@@ -1,7 +1,6 @@
 #ifndef SQLEXECUTOR_H
 #define SQLEXECUTOR_H
 
-#include "SqlExecutor_global.h"
 #include "sqlexecutorpool.h"
 #include <QSqlDatabase>
 
