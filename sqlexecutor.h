@@ -10,7 +10,7 @@ class SQLEXECUTOR_EXPORT SqlExecutor : public QObject
 {
     Q_OBJECT
 public:
-    explicit SqlExecutor(const QString &driver,
+    explicit SqlExecutor (const QString &driver,
                           const QString &connection,
                           const QString &hostname,
                           const QString &database,
