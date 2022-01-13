@@ -20,9 +20,9 @@ SqlExecutor::SqlExecutor(const QString &driver,
       m_username(username),
       m_password(password),
       m_port(port),
-      m_thread(new QThread)
+      m_thread(new QThread),
+      m_ExecutorPool(SqlExecutorPool::instance())
 {
-    m_ExecutorPool = SqlExecutorPool::instance();
     m_ExecutorPool->append(this);
     moveToThread(m_thread.data());
     connect(m_thread.data(), &QThread::started, this, &SqlExecutor::executeQuery);
